@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cls4wysfa6by8"]
+
+[ext_resource type="FontFile" uid="uid://wa1eq5mjhky1" path="res://themes/MPLUSRounded1c-Bold.ttf" id="1_g2f5g"]
+
+[resource]
+default_font = ExtResource("1_g2f5g")
+default_font_size = 100

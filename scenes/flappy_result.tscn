@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://4n1g83yx3lih"]
+
+[ext_resource type="Theme" uid="uid://6w0xurxfp2kp" path="res://themes/packman_middle.tres" id="1_omjcf"]
+[ext_resource type="Script" path="res://scripts/nodes/FlappyResultUI.gd" id="1_sag4p"]
+
+[node name="Root" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 800.0
+offset_bottom = 1600.0
+theme = ExtResource("1_omjcf")
+script = ExtResource("1_sag4p")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Word" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 400.0
+offset_bottom = 520.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[center]Your Score is ..."
+
+[node name="Score" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 550.0
+offset_bottom = 670.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[center]0000000"
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 900.0
+offset_right = 476.0
+offset_bottom = 1007.0
+text = "Title"

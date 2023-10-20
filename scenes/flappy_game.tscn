@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm5q0hv51g6gc"]
+
+[ext_resource type="Theme" uid="uid://cls4wysfa6by8" path="res://themes/packman.tres" id="1_50k32"]
+[ext_resource type="Script" path="res://scripts/nodes/FlappyGameUI.gd" id="1_jo8py"]
+
+[node name="Root" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 800.0
+offset_bottom = 1600.0
+theme = ExtResource("1_50k32")
+script = ExtResource("1_jo8py")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Score" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 150.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[center]Score:0000000"
+
+[node name="CountDown" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 500.0
+offset_right = 700.0
+offset_bottom = 650.0
+bbcode_enabled = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 100.0
+offset_top = 700.0
+offset_right = 700.0
+offset_bottom = 850.0
+text = "GameStart!!"
